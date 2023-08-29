@@ -1,0 +1,14 @@
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\bin\Debug\netcoreapp3.1\BlackjackGame.exe
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\bin\Debug\netcoreapp3.1\BlackjackGame.deps.json
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\bin\Debug\netcoreapp3.1\BlackjackGame.runtimeconfig.json
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\bin\Debug\netcoreapp3.1\BlackjackGame.runtimeconfig.dev.json
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\bin\Debug\netcoreapp3.1\BlackjackGame.dll
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\bin\Debug\netcoreapp3.1\BlackjackGame.pdb
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\obj\Debug\netcoreapp3.1\BlackjackGame.csproj.AssemblyReference.cache
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\obj\Debug\netcoreapp3.1\BlackjackGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\obj\Debug\netcoreapp3.1\BlackjackGame.AssemblyInfoInputs.cache
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\obj\Debug\netcoreapp3.1\BlackjackGame.AssemblyInfo.cs
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\obj\Debug\netcoreapp3.1\BlackjackGame.csproj.CoreCompileInputs.cache
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\obj\Debug\netcoreapp3.1\BlackjackGame.dll
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\obj\Debug\netcoreapp3.1\BlackjackGame.pdb
+C:\Users\emily\source\repos\BlackjackGame\BlackjackGame\obj\Debug\netcoreapp3.1\BlackjackGame.genruntimeconfig.cache
