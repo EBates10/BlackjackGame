@@ -12,11 +12,14 @@ namespace BlackjackGame
         static string playerExpertise = "beginner";
         static int totalGamesPlayed = 0;
         static double playerMoney = 0;
+
+        
         static void Main(string[] args)
         {
             const double initialMoney = 100.00;
             playerMoney = initialMoney;
-
+            int playerTotalCardScore = 0;
+            int dealerTotalCardScore = 0;
 
             PrintIntro();
             Thread.Sleep(1000);
