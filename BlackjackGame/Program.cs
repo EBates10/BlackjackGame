@@ -127,97 +127,18 @@ namespace BlackjackGame
             return cardScore;
         }
 
-        private static void ResetStats(double initialMoney, out double playerMoney, out int totalGamesPlayed)
-        {
-            totalGamesPlayed = 0;
-            playerMoney = initialMoney;
-            Console.WriteLine("Stats were reset");
-        }
 
-        private static string GetPlayerExpertise(string playerExpertise, int totalGamesPlayed)
-        {
-            Console.WriteLine("How many games of Blackjack have you played so far? Please enter an integer.");
-            Console.ForegroundColor = ConsoleColor.Green;
-            totalGamesPlayed = int.Parse(Console.ReadLine());
-            Console.ForegroundColor = ConsoleColor.Gray;
-            if (totalGamesPlayed > 20)
-            {
-                if (totalGamesPlayed <= 100)
-                {
-                    playerExpertise = "intermediate";
-                }
-                else if (totalGamesPlayed <= 150)
-                {
-                    playerExpertise = "advanced";
-                }
-                else if (totalGamesPlayed > 150)
-                {
-                    playerExpertise = "expert";
-                }
-            }
-            else
-            {
-                playerExpertise = "beginner";
-            }
-            Console.WriteLine("Great! You'll be considered {0} level player.", playerExpertise);
 
-            return playerExpertise;
-        }
 
-        private static string PrintMainMenu(string playerExpertise, double playerMoney, string name)
-        {
-            Console.WriteLine("You have ${1}. Use it wisely! ;)", playerExpertise, playerMoney);
-            Console.WriteLine("1. New Game");
-            Console.WriteLine("2. Reset Stats");
-            Console.WriteLine("3. Stats");
-            Console.WriteLine("4. Credits");
-            Console.WriteLine("5. Exit");
-            Console.WriteLine("\nPlease type your menu selection and press <Enter>");
-            Console.ForegroundColor = ConsoleColor.Green;
-            string selectedMenuAnswer = Console.ReadLine();
-            Console.ForegroundColor = ConsoleColor.Gray;
-            return selectedMenuAnswer;
-        }
 
-        private static string GetPlayerName()
-        {
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.WriteLine("Please enter your name: ");
-            Console.ForegroundColor = ConsoleColor.Green;
-            string name = Console.ReadLine();
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.WriteLine($"Hello, {name}! Thanks for joining our game.");
-            return name;
-        }
 
-        private static void PrintCredits()
-        {
-            Console.WriteLine("-----------------------------------------");
-            Console.WriteLine("Developer: Edvinas (YT @DeveloperJourney)");
-            Console.WriteLine("-----------------------------------------");
-        }
 
-        private static void ShuffleAndDeal()
-        {
-            Thread.Sleep(2000);
-            Console.WriteLine("Shuffling the deck...");
-            Thread.Sleep(2000);
-            Console.WriteLine("Done shuffling the deck.");
-            Thread.Sleep(2000);
-            Console.WriteLine("Dealing the cards.");
-            Thread.Sleep(1000);
-            Console.WriteLine("");
-        }
 
-        private static void PrintStats(double playerMoney, string playerRole, string playerExpertise, string name)
-        {
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine($"Player name: {name}");
-            Console.WriteLine($"Player role: {playerRole}");
-            Console.WriteLine($"Skill level: {playerExpertise}");
-            Console.WriteLine($"Available Funds: ${playerMoney}");
-            Console.WriteLine("----------------------------------");
-        }
+
+
+
+
+
 
         private static void PrintIntro()
         {
@@ -251,13 +172,92 @@ namespace BlackjackGame
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine("");
         }
-
-        private static void RequestName()
+        private static string GetPlayerName()
         {
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine("Please enter your name: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            string name = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine($"Hello, {name}! Thanks for joining our game.");
+            return name;
+        }
+        private static string GetPlayerExpertise(string playerExpertise, int totalGamesPlayed)
+        {
+            Console.WriteLine("How many games of Blackjack have you played so far? Please enter an integer.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            totalGamesPlayed = int.Parse(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Gray;
+            if (totalGamesPlayed > 20)
+            {
+                if (totalGamesPlayed <= 100)
+                {
+                    playerExpertise = "intermediate";
+                }
+                else if (totalGamesPlayed <= 150)
+                {
+                    playerExpertise = "advanced";
+                }
+                else if (totalGamesPlayed > 150)
+                {
+                    playerExpertise = "expert";
+                }
+            }
+            else
+            {
+                playerExpertise = "beginner";
+            }
+            Console.WriteLine("Great! You'll be considered {0} level player.", playerExpertise);
 
+            return playerExpertise;
+        }
+        private static string PrintMainMenu(string playerExpertise, double playerMoney, string name)
+        {
+            Console.WriteLine("You have ${1}. Use it wisely! ;)", playerExpertise, playerMoney);
+            Console.WriteLine("1. New Game");
+            Console.WriteLine("2. Reset Stats");
+            Console.WriteLine("3. Stats");
+            Console.WriteLine("4. Credits");
+            Console.WriteLine("5. Exit");
+            Console.WriteLine("\nPlease type your menu selection and press <Enter>");
+            Console.ForegroundColor = ConsoleColor.Green;
+            string selectedMenuAnswer = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Gray;
+            return selectedMenuAnswer;
         }
 
-
+        private static void ShuffleAndDeal()
+        {
+            Thread.Sleep(2000);
+            Console.WriteLine("Shuffling the deck...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Done shuffling the deck.");
+            Thread.Sleep(2000);
+            Console.WriteLine("Dealing the cards.");
+            Thread.Sleep(1000);
+            Console.WriteLine("");
+        }
+        private static void ResetStats(double initialMoney, out double playerMoney, out int totalGamesPlayed)
+        {
+            totalGamesPlayed = 0;
+            playerMoney = initialMoney;
+            Console.WriteLine("Stats were reset");
+        }
+        private static void PrintStats(double playerMoney, string playerRole, string playerExpertise, string name)
+        {
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine($"Player name: {name}");
+            Console.WriteLine($"Player role: {playerRole}");
+            Console.WriteLine($"Skill level: {playerExpertise}");
+            Console.WriteLine($"Available Funds: ${playerMoney}");
+            Console.WriteLine("----------------------------------");
+        }
+        private static void PrintCredits()
+        {
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("Developer: Edvinas (YT @DeveloperJourney)");
+            Console.WriteLine("-----------------------------------------");
+        }
     }
 
 }
